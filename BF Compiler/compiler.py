@@ -1,9 +1,9 @@
 # BF Compiler by Kian Acaster v1.0 [No loops] #
-limit = 10**3
-cells = []
-pointer = 0 
-instructions = []
-string = []
+limit = 10**3 # The size of the cell array
+cells = [] # The cell array
+pointer = 0 # The index pointer for the cell array
+instructions = [] # An array of each instruction from the code file
+string = [] # An array of characters from each cell's ASCII value (if printed)
 final_string = ""
 
 for i in range(limit): 
