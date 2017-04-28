@@ -21,7 +21,7 @@ console_instruction = input()
 # Runs the function "parse_instructions" 
 parse_instructions(instruction.read(), instructions)
 
-# This only happens if the user types "compile" into the console, this will run the BF program
+# This only happens if the user types "compile" into the console, this will run the program
 if console_instruction == "compile":
     for i in range(len(instructions)):
         if instructions[i] == "+": 
@@ -39,7 +39,7 @@ if console_instruction == "compile":
             else:    
                 pointer = pointer - 1
         if instructions[i] == ".":
-            string.append(chr(cells[pointer]))         
+            string.append(chr(cells[pointer]))        
     for i in range(len(string)):
         final_string += string[i]
     print(final_string)
